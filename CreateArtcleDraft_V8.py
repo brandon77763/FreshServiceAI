@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Freshservice API Details
-api_key = "000000000000000000"
+api_key = "sdfsfsdfsdfsfsfsdf"
 encoded_api_key = base64.b64encode(f"{api_key}:".encode()).decode()
 
 headers = {
@@ -24,7 +24,7 @@ headers = {
     'Content-Type': 'application/json'
 }
 
-FRESHSERVICE_DOMAIN = 'mydomain.freshservice.com'
+FRESHSERVICE_DOMAIN = 'domain.freshservice.com'
 API_URL = f'https://{FRESHSERVICE_DOMAIN}/api/v2/tickets'
 SOLUTIONS_API_URL = f'https://{FRESHSERVICE_DOMAIN}/api/v2/solutions/articles'
 
@@ -32,7 +32,7 @@ SOLUTIONS_API_URL = f'https://{FRESHSERVICE_DOMAIN}/api/v2/solutions/articles'
 rag_cache = {}
 
 # Setup for OpenAI Studio
-client = OpenAI(base_url="http://0.0.0.0:1234/v1", api_key="lm-studio")
+client = OpenAI(base_url="http://192.168.1.1:1234/v1", api_key="lm-studio")
 
 
 
